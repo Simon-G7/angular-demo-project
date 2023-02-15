@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { PokemonService } from '../services/pokemon.service';
+import { PokemonService } from 'src/app/services/pokemon.service';
 
 @Component({
-  selector: 'app-pokemon',
-  templateUrl: './pokemon.component.html',
-  styleUrls: ['./pokemon.component.css']
+  selector: 'app-user-pokemon',
+  templateUrl: './user-pokemon.component.html',
+  styleUrls: ['./user-pokemon.component.css']
 })
-export class PokemonComponent {
+export class UserPokemonComponent {
 
   name: string = ''
   urlPhoto : string=''
@@ -18,4 +18,5 @@ export class PokemonComponent {
       this.urlPhoto = data.sprites.front_default
     })
   }
+  
 }
