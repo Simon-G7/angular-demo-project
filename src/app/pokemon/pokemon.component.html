@@ -1,0 +1,7 @@
+<p>Inserte el nombre: </p>
+<input type="text" [(ngModel)]="name">
+<button (click)="search()">BUSCAR</button>
+<br>
+<div *ngIf="name">
+    <img src="{{urlPhoto}}" alt="Pokemon photo">
+</div>
